@@ -1,6 +1,3 @@
-
 export default function Home() {
-  return (
-    <>Welcome to their place</>
-  );
+  return <>Welcome to their place</>;
 }
