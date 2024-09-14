@@ -9,14 +9,14 @@ export default function NavBar({ children }: { children: ReactNode }) {
   return (
     <Box>
       <HideOnScroll>
-        <AppBar position="sticky" enableColorOnDark={true}>
+        <AppBar position="sticky" enableColorOnDark={true} sx={{ mb: 1 }}>
           <Toolbar disableGutters>
-            <HomeIcon sx={{ display: { xs: "none", md: "flex" }, mx: 1 }} />
+            <HomeIcon sx={{ display: { xs: "none", md: "flex" }, ml: 2 }} />
             <Typography
               variant="h6"
               noWrap
               sx={{
-                mx: 1,
+                mx: 0.5,
                 display: "flex",
                 fontFamily: "monospace",
                 fontWeight: 700,
@@ -31,6 +31,7 @@ export default function NavBar({ children }: { children: ReactNode }) {
             </Typography>
             <Box sx={{ ml: "auto" }} />
             <ThemeSwitcher />
+            <Box sx={{ mr: 2 }} />
           </Toolbar>
         </AppBar>
       </HideOnScroll>
