@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/src/mui/theme";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import { CssBaseline } from "@mui/material";
+import NavBar from "@/src/mui/NavBar";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -26,12 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={roboto.variable}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <InitColorSchemeScript attribute="class" />
             <CssBaseline />
-            <main>{children}</main>
+            <NavBar>
+              <main>{children}</main>
+            </NavBar>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
