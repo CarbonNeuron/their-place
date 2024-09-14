@@ -32,9 +32,7 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <InitColorSchemeScript attribute="class" />
             <CssBaseline />
-            <NavBar>
-              <main>{children}</main>
-            </NavBar>
+            <NavBar>{children}</NavBar>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
