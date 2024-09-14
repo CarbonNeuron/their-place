@@ -15,14 +15,14 @@ export default function ThemeSwitcher() {
     >
       <LightModeIcon
         sx={(theme) => ({
-          ...theme.applyStyles("dark", {
+          ...theme.applyStyles("light", {
             display: "none",
           }),
         })}
       />
       <DarkModeIcon
         sx={(theme) => ({
-          ...theme.applyStyles("light", {
+          ...theme.applyStyles("dark", {
             display: "none",
           }),
         })}
